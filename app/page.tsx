@@ -10,7 +10,7 @@ export default function Home() {
     try {
 
       const encodedCity = encodeURIComponent(city as string);
-      const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${encodedCity}&units=metric&appid=d068bb96a1d7ba8987f892ea7c2d81ab`);
+      const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${encodedCity}&units=metric&lang=ja&appid=d068bb96a1d7ba8987f892ea7c2d81ab`);
       const data = await res.json();
       setWeather(data);
     } catch (error) {
@@ -51,8 +51,10 @@ export default function Home() {
       </form>
       {weather &&  weather.cod === 200? (
         <>
+          <p>{weather.name}の天気</p>
           <p>{weather.weather[0].main}</p>
-          <p>最高気温：{weather.main.temp_max}</p>
+          <p>最高気温：{weather.main.temp_max}℃</p>
+          <p>最低気温：{weather.main.temp_min}℃</p>
         </>
       ) : (
         <p>天気情報がありません</p>

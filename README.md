@@ -1,5 +1,8 @@
-## Next.js App Router Course - Starter
+# React, Next.js
+・ ApprenticeのGit Hub
+https://github.com/APPRENTICE-jp/apprentice/blob/2nd/curriculum/REACT.md
 
-This is the starter template for the Next.js App Router Course. It contains the starting code for the dashboard application.
+## Quest XV. データを取得できる
+https://github.com/APPRENTICE-jp/apprentice/blob/2nd/quest/technologies/nextjs/DATA.md
 
-For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
+app/page.tsxにコード記載しています。
